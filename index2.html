@@ -158,11 +158,22 @@
         <div class="col-md-10 col-lg-8 mx-auto text-center">
 
           <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+          <h2 class="text-white mb-5">Deixe seus dados que entramos em contato com você</h2>
 
           <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+            <input type="nome" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputNome" placeholder="Nome">
+			<input type="fone" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputFone" placeholder="Fone">
+			<input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Email">
+			<select name="recebecontato" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="lstRecebeContato" placeholder="Quero receber contato por">
+				<option value="Ligação">..Quero receber contato por..</option>
+				<option value="Ligação">Ligação</option>
+				<option value="Ligação">Email</option>
+				<option value="Ligação">Whattsapp</option>
+				<option value="Ligação">Não quero contato, apenas enviar mensagem</option>
+			</select>
+			<input type="assunto" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputAssunto" placeholder="Assunto da mensagem">
+			<textarea type="msg" rows=5 class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputMsg" placeholder="Deixe sua mensagem"></textarea>
+            <button type="submit" class="btn btn-primary mx-auto">Enviar</button>
           </form>
 
         </div>
