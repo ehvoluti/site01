@@ -160,7 +160,7 @@
           <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
           <h2 class="text-white mb-5">Deixe seus dados que entramos em contato com você</h2>
 
-          <form class="form-inline d-flex">
+          <form class="form-inline d-flex" action="envia_fale.php" method="post">
             <input type="nome" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputNome" placeholder="Nome">
 			<input type="fone" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputFone" placeholder="Fone">
 			<input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Email">
@@ -173,7 +173,7 @@
 			</select>
 			<input type="assunto" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputAssunto" placeholder="Assunto da mensagem">
 			<textarea type="msg" rows=5 class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputMsg" placeholder="Deixe sua mensagem"></textarea>
-            <button type="submit" class="btn btn-primary mx-auto">Enviar</button>
+            <button type="submit" id="submit" class="btn btn-primary mx-auto">Enviar</button>
           </form>
 
         </div>
