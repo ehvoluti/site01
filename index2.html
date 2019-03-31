@@ -161,19 +161,19 @@
           <h2 class="text-white mb-5">Deixe seus dados que entramos em contato com você</h2>
 
           <form class="form-inline d-flex" action="envia_fale.php" method="post">
-            <input type="nome" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputNome" placeholder="Nome">
-			<input type="fone" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputFone" placeholder="Fone">
-			<input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Email">
-			<select name="recebecontato" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="lstRecebeContato" placeholder="Quero receber contato por">
-				<option value="Ligação">..Quero receber contato por..</option>
-				<option value="Ligação">Ligação</option>
-				<option value="Ligação">Email</option>
-				<option value="Ligação">Whattsapp</option>
-				<option value="Ligação">Apenas enviar mensagem</option>
+            <input type="nome" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputNome" name="inputNome" placeholder="Nome">
+			<input type="fone" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputFone" name="inputFone" placeholder="Fone">
+			<input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" name="inputEmail" placeholder="Email">
+			<select name="recebecontato" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="lstRecebeContato" name="lstRecebeContato" placeholder="Quero receber contato por">
+				<option value="Ligacao">..Quero receber contato por..</option>
+				<option value="Ligacao">Ligação</option>
+				<option value="Ligacao">Email</option>
+				<option value="Ligacao">Whattsapp</option>
+				<option value="Ligacao">Apenas enviar mensagem</option>
 			</select>
-			<input type="assunto" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputAssunto" placeholder="Assunto da mensagem">
-			<textarea type="msg" rows=5 class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputMsg" placeholder="Deixe sua mensagem"></textarea>
-            <button type="submit" id="submit" class="btn btn-primary mx-auto">Enviar</button>
+			<input type="assunto" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputAssunto" name="inputAssunto" placeholder="Assunto da mensagem">
+			<textarea type="msg" rows=5 class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputMsg" name="inputMsg" placeholder="Deixe sua mensagem"></textarea>
+            <button type="submit" name="submit" class="btn btn-primary mx-auto">Enviar</button>
           </form>
 
         </div>
