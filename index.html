@@ -9,7 +9,13 @@
   <meta name="author" content="">
 
   <title>Ehvoluti</title>
-
+		<script>
+		function funcao1()
+		{
+		alert("Email enviado, Obrigado!");
+		}
+		</script>
+		
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -149,29 +155,40 @@
     </div>
   </section>
 
-  <!-- Signup Section 
-  Comentado para envio de email
-  
-  <section id="signup" class="signup-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto text-center">
+   <!-- Signup Section 
+  Envio de email para que possamos entrar em contato
+  -->
+<section id="signup" class="signup-section">
+<div class="container">
+  <div class="row">
+	<div class="col-md-10 col-lg-8 mx-auto text-center">
 
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+	  <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+	  <h2 class="text-white mb-5">Deixe seus dados que entramos em contato</h2>
 
-          <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-          </form>
+	  <form class="form-inline d-flex" action="envia_fale.php" method="post">
+		<input type="nome" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputNome" name="inputNome" placeholder="Nome">
+		<input type="fone" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputFone" name="inputFone" placeholder="Fone">
+		<input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" name="inputEmail" placeholder="Email">
+		<select class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="lstRecebeContato" name="lstRecebeContato" placeholder="Quero receber contato por">
+			<option value="Ligacao">..Quero receber contato por..</option>
+			<option value="Ligacao">Ligação</option>
+			<option value="Ligacao">Email</option>
+			<option value="Ligacao">Whatsapp</option>
+			<option value="Ligacao">Apenas enviar mensagem</option>
+		</select>
+		<input type="assunto" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputAssunto" name="inputAssunto" placeholder="Assunto da mensagem">
+		<textarea type="msg" rows=5 class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputMsg" name="inputMsg" placeholder="Deixe sua mensagem"></textarea>
+		<button type="submit" name="submit" onclick="funcao1()" class="btn btn-primary mx-auto">Enviar</button>
+	  </form>
 
-        </div>
-      </div>
-    </div>
-  </section>
--->
+	</div>
+  </div>
+</div>
+</section>
+
   <!-- Contact Section -->
-  <section id="signup" class="contact-section bg-black">
+  <section class="contact-section bg-black">
     <div class="container">
 
       <div class="row">
